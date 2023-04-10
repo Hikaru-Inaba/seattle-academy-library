@@ -33,7 +33,7 @@ public class AccountController {
 	/**
 	 * 新規アカウント作成
 	 *
-	 * @param email            メールアドレス
+	 * @param email            メールアドレスa
 	 * @param password         パスワード
 	 * @param passwordForCheck 確認用パスワード
 	 * @param model
@@ -48,8 +48,16 @@ public class AccountController {
 		logger.info("Welcome createAccount! The client locale is {}.", locale);
 
 		// バリデーションチェック、パスワード一致チェック（タスク１）
-
-		
+        if(password.length() >= 8 && password.equals( "0-9A-Za-z")) {
+		    if(password == passwordForCheck) {
+		    }else {
+		    System.out.println("パスワードが一致しません");
+		    }
+        }else {
+		       System.out.println("パスワードは８文字以上かつ半角英数字に設定してください。");
+		       
+		    }
+		    	
 		// パラメータで受け取ったアカウント情報をDtoに格納する。
 		UserInfo userInfo = new UserInfo();
 		userInfo.setEmail(email);
