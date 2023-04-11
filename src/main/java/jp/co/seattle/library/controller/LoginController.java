@@ -48,7 +48,5 @@ public class LoginController {
 			model.addAttribute("パスワードは８文字以上かつ半数英数字に設定してください");
 			return "createAccount";
 		}
-
-		return "redirect:/home";
 	}
 }
