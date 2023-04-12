@@ -33,7 +33,7 @@ public class AccountController {
 	/**
 	 * 新規アカウント作成
 	 *
-	 * @param email            メールアドレスa
+	 * @param email            メールアドレス
 	 * @param password         パスワード
 	 * @param passwordForCheck 確認用パスワード
 	 * @param model
@@ -60,7 +60,7 @@ public class AccountController {
 		       return"createAccount";
 		    }
         }else {
-		   model.addAttribute("パスワードは８文字以上かつ半角英数字に設定してください。");
+		   model.addAttribute("errorMessage","パスワードは８文字以上かつ半角英数字に設定してください。");
 		   return"createAccount";
 		}
 		    	
