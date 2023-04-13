@@ -30,7 +30,7 @@ public class AccountController {
 		return "createAccount";
 	}
 
-	/**
+	/*
 	 * 新規アカウント作成
 	 *
 	 * @param email            メールアドレス
