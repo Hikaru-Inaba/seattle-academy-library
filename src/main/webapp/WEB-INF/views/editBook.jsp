@@ -94,17 +94,14 @@
 							<input type="text" name="description">
 						</c:if>
 					</div>
-					<input type="hidden" id="bookId" name="bookId" value="${bookInfo.bookId}">
+					<input type="hidden" id="bookId" name="bookId"
+						value="${bookInfo.bookId}">
 				</div>
 			</div>
 			<div class="bookBtn_box">
 				<button type="submit" id="add-btn" class="btn_updateBook">更新</button>
 		</form>
-		<form method="post" action="deleteBook" name="delete">
-			<input type="hidden" id="bookId" name="bookId"
-				value="${bookInfo.bookId}">
-			<button type="submit" id="delete-btn" class="btn_updateBook">削除</button>
-		</form>
+		<form method="post" action="deleteBook" name="delete"></form>
 		</div>
 	</main>
 </body>
